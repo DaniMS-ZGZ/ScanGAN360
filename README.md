@@ -1,6 +1,8 @@
 # ScanGAN360
 Code and model for the paper "ScanGAN360: A Generative Model of Realistic Scanpaths for 360º Images".
 
+![Teaser](https://github.com/DaniMS-ZGZ/ScanGAN360/blob/main/img/vr-scanpaths.jpg)
+
 ## Requirements
 This work was developed using:
 ```
