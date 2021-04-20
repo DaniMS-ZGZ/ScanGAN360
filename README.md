@@ -11,6 +11,7 @@ This work was developed using:
 * cudatoolkit 10.0.30
 * opencv 4.1.2
 ```
+You can install an environment with all required dependencies using `scangan360.yml` file in Anaconda.
 
 ## Inference
 The current version of the repository includes a basic, yet functional version to generate scanpaths from a 360º image using the ScanGAN360 model.
