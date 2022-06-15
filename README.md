@@ -17,7 +17,6 @@ You can install an environment with all required dependencies using `scangan360.
 The current version of the repository includes a basic, yet functional version to generate scanpaths from a 360º image using the ScanGAN360 model.
 
 ### Usage
-There is currently one mode of usage for this code:
 ```
 python main.py --mode inference 
 ```
@@ -25,4 +24,12 @@ python main.py --mode inference
 This will read an image `image_path = "data/test.jpg"` and generate a set of scanpaths that will be saved in `path_to_save = "test/"`. You can modify both those paths, and the number of generated scanpaths `n_generated`. Each of the images will contain 25 different scanpaths.
 
 ## Training the model
-This option will be available soon.
+Training is now available. [Updated June 15th]
+
+```
+python main.py --mode train 
+```
+
+Make sure you have correctly updated `utils.py`, including all the directories required. Also, check the `data` folder to download the required images and processed gaze data.
+
+Checkpoints and models are saved periodically in the assigned folder.
