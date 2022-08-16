@@ -117,8 +117,8 @@ def g_loop(netD, netG, optimizerD, optimizerG, criterion, image, scanpath, devic
 	bce_error = utils.lambda_BCE * criterion(dg_fake_decision.view(-1), target.view(-1)) 
 
 	
-	g_fake_data = torch.reshape(g_fake_data,(b_size, 2, g_fake_data.shape[-1] // 2))
-	scanpath = torch.reshape(scanpath,(b_size, 2, scanpath.shape[-1] // 2))
+	g_fake_data = torch.reshape(g_fake_data,(b_size, 3, g_fake_data.shape[-1] // 3))
+	scanpath = torch.reshape(scanpath,(b_size, 3, scanpath.shape[-1] // 3))
 
 
 	# DTW loss
